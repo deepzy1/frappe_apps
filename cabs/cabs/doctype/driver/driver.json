@@ -2,23 +2,18 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "field:name1",
+ "autoname": "field:first_name",
  "creation": "2025-02-20 10:51:21.425967",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "lastname",
+  "first_name",
+  "last_name",
   "years_of_exp",
-  "license_id"
+  "license_id",
+  "full_name"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "FirstName",
-   "unique": 1
-  },
   {
    "fieldname": "years_of_exp",
    "fieldtype": "Int",
@@ -30,14 +25,25 @@
    "label": "LicenseNumber"
   },
   {
-   "fieldname": "lastname",
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "LastName"
+   "label": "First Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-28 09:54:10.061006",
+ "modified": "2025-03-05 15:09:48.537255",
  "modified_by": "Administrator",
  "module": "cabs",
  "name": "Driver",
