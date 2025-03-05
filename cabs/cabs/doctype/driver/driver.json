@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2025-02-20 10:51:21.425967",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "lastname",
+  "years_of_exp",
+  "license_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "FirstName",
+   "unique": 1
+  },
+  {
+   "fieldname": "years_of_exp",
+   "fieldtype": "Int",
+   "label": "PhoneNumber"
+  },
+  {
+   "fieldname": "license_id",
+   "fieldtype": "Data",
+   "label": "LicenseNumber"
+  },
+  {
+   "fieldname": "lastname",
+   "fieldtype": "Data",
+   "label": "LastName"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-28 09:54:10.061006",
+ "modified_by": "Administrator",
+ "module": "cabs",
+ "name": "Driver",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

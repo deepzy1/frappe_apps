@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:model",
+ "creation": "2025-02-20 10:53:01.324627",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_msgw",
+  "title",
+  "make",
+  "year",
+  "model",
+  "insurance_expire",
+  "get_summary",
+  "summary",
+  "column_break_ntwc",
+  "is_audited",
+  "number_plate",
+  "color",
+  "route",
+  "published",
+  "image",
+  "status",
+  "condition"
+ ],
+ "fields": [
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model",
+   "unique": 1
+  },
+  {
+   "fieldname": "number_plate",
+   "fieldtype": "Data",
+   "label": "LicensePlate"
+  },
+  {
+   "fieldname": "column_break_ntwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "section_break_msgw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Active\nOut of service\nSold\nCrushed"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Rating",
+   "label": "Condition"
+  },
+  {
+   "fieldname": "insurance_expire",
+   "fieldtype": "Date",
+   "label": "Insurance Expire"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_audited",
+   "fieldtype": "Check",
+   "label": "Is Audited",
+   "permlevel": 1
+  }
+ ],
+ "has_web_view": 1,
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2025-03-05 12:35:17.979180",
+ "modified_by": "Administrator",
+ "module": "cabs",
+ "name": "Vehicle",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicel manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicel manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "cars",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}

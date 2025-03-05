@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2025-02-25 14:52:29.180402",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Ride Order",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>New booking is arrived</p>\n\n<a href=\"http://super.com\"/>\n",
+ "message_type": "HTML",
+ "modified": "2025-02-25 14:55:08.438753",
+ "modified_by": "Administrator",
+ "module": "cabs",
+ "name": "New Booking",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.customer_name  }} booked  a vechicle "
+}

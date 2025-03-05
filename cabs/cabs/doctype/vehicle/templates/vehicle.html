@@ -1,0 +1,21 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+{% if doc.image %}
+<img src="{{doc.image}}"/>
+{% else %}
+<h5>No image</h5>
+
+{% endif%}
+
+
+<h2>Colour:{{doc.color}}</h2>
+<h2>Name {{doc.make}}</h2>
+<h3>Year {{doc.year}}</h3>
+<h3>License Plate:{{doc.number_plate}}</h3>
+
+<a class="btn btn-info" href="/book-a-ride-/new?vehicle={{doc.name}}">Book ride</a>
+<a class="btn btn-info" href="/book-a-ride-">Book ride</a>
+{% endblock %}
+

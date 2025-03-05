@@ -120,6 +120,10 @@ app_license = "mit"
 # permission_query_conditions = {
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
+
+# permission_query_conditions = {
+# 	"Vehicle": "cabs.api.query_conditions",
+# }
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -136,6 +140,14 @@ app_license = "mit"
 # Document Events
 # ---------------
 # Hook on document methods and events
+
+# apps/cabs/cabs/api.py
+
+doc_events = {
+	"ToDo": {
+		"before_insert":"cabs.api.throw_emoji"
+	}
+}
 
 # doc_events = {
 # 	"*": {
@@ -165,6 +177,17 @@ app_license = "mit"
 # 		"cabs.tasks.monthly"
 # 	],
 # }
+
+scheduler_events = {
+    "Cron":{
+        "33 15 * * 3": [
+		"cabs.api.demo_cron"
+	]
+    }
+	
+}
+	
+
 
 # Testing
 # -------

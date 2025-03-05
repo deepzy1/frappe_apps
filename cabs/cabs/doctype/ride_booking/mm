@@ -1,0 +1,85 @@
+Based on the transcript from the Frappe Framework App Development Bootcamp - Day 2 (Dubai, 2024), here are some quick notes covering theory, practical code, and concepts for revision and long-term recall:
+
+Core Concepts and Terminology
+   DocTypes: Fundamental data structures in Frappe. Includes JSON, JS, and Python files.
+   Bench: A tool that manages Frappe apps and sites.
+   Sites: Specific instances of a Frappe application.
+   Apps: Collections of DocTypes and custom logic that can be installed on a site.
+   `env`: Python environment folder storing packages and binaries installed by bench. Use `bench pip` to install packages.
+   Hooks: Functions triggered by specific actions within Frappe, such as `before_save`, `before_insert`, `on_trash`, `after_delete`, and `validate`.
+   Submittable DocTypes: Transactional documents with states like Draft, Submitted, and Cancelled.
+   Child Tables: DocTypes displayed as grids within other DocTypes, establishing a one-to-many relationship.
+
+Key Commands and APIs
+   Bench Commands:
+       `bench pip`: Installs Python packages within the bench environment.
+       `bench migrate`: Applies patches and updates to the database schema.
+       `bench execute patch`: Executes specific patches.
+   Frappe APIs:
+       `frappe.get_doc`: Retrieves a document by DocType and name.
+       `frappe.db.get_value`: Fetches a specific field value from a DocType.
+       `frappe.db.get_list`: Retrieves a list of documents based on specified filters and fields.
+       `frappe.db.set_value`: Updates a field value in a DocType.
+       `frappe.db.delete`: Deletes a DocType.
+       `frappe.db.truncate`: Empties a table (use with caution).
+   Client-Side Scripting (JavaScript):
+       `frm.add_custom_button`: Adds a custom button to a form.
+       `frappe.show_alert`: Displays an alert message.
+
+CRUD Operations and APIs
+   Methods: Frappe supports creating, reading, updating, and deleting (CRUD) data in three ways:
+       UI: Interacting with DocTypes through lists and forms.
+       REST API: Interacting with the system from external services using API endpoints. API V1 is documented, and V2 is the newest version.
+           Authentication via API key and secret or handling cookies and session data.
+           Endpoints: `/api/method` or `/api/resource/[DocType Name]`.
+       Python Scripting: Using Frappe's backend APIs within Python code.
+
+Patches
+   Purpose: Custom scripts to modify data or schema during migrations.
+   Execution: Run using `bench migrate`. Patches are executed only once.
+   File: Stored in the app's directory, often within a `patches.txt` file to indicate which patches to run.
+   Patches should manage commits and rollbacks.
+
+Web Forms
+   Definition: Used to create public-facing forms for users to submit data.
+   Customisation: Web Forms automatically generate routes, and can include descriptions. The route gets automatically generated based on the title.
+   Standard Web Forms: Use the standard checkbox when creating custom apps.
+
+Web Views
+   Purpose: Generate portal pages for DocTypes, allowing public display of information.
+   Configuration: Requires an "is published" field (boolean) in the DocType and a route field.
+   Customisation: Use Ginger templating to modify list and detail views.
+       Templates are stored in the `templates` folder within the DocType directory.
+       `DocType Name` + `row.html` renders the list view.
+       Extend the base web.html for Frappe styling.
+   WWW Pages: Static HTML files located in the `www` folder of your app for creating simple web pages.
+
+Notifications
+   Functionality: Send alerts via system notifications or email based on defined triggers and conditions.
+   Configuration: Use the Notification DocType to set up event triggers, recipients, and message content.
+
+Reports
+   Report Builder: Simplest form of report creation through UI.
+   Query Report: Uses SQL queries to generate reports.
+       Reference DocType: Shows which reports are available for a doctype.
+       Wild Card filter wraps percentage symbol before and after the make whatever you type.
+   Script Report: Uses Python scripts for complex data processing and report generation.
+   Auto Email Report: Sends reports on a regular interval.
+   The best place to refer for report examples is ERPNext.
+
+Client Scripting
+   Location: JavaScript files associated with DocTypes or within Client Script records.
+   Hooks:
+       `onLoad`: Runs once when the form is loaded.
+       `onRefresh`: Runs every time the form is refreshed.
+       `setup`: Runs before onLoad.
+   Child Table Scripts: Special considerations for scripting within child tables.
+       `cdt`: Child DocType.
+       `cdn`: Child Name.
+   Custom Counter:  Create custom actions.
+
+Ginger Templating
+   Syntax: Uses `{{ variable }}` for dynamic variables, `{% if condition %}` for conditional logic, and `{% for item in list %}` for loops.
+   Usage: Used in web views, web pages, and notifications for dynamic content generation.
+
+These notes should provide a solid foundation for revising the key concepts and practical applications covered in the Frappe Framework App Development Bootcamp.
