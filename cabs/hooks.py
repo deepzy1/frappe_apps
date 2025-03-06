@@ -129,6 +129,12 @@ app_license = "mit"
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
 
+# fixtures = [["dt": "Vehicle Type", "filters": "is_standard": 1}]
+
+fixtures=["Vehicle Type",'Rental Settings']
+
+# fixtures =[{'dt':"Vehicle Type",'filters':{"available":1}}]
+
 # DocType Class
 # ---------------
 # Override standard doctype classes

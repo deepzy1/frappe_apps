@@ -18,6 +18,7 @@
   "summary",
   "column_break_ntwc",
   "is_audited",
+  "vehicel_type",
   "number_plate",
   "color",
   "route",
@@ -116,6 +117,12 @@
    "fieldtype": "Check",
    "label": "Is Audited",
    "permlevel": 1
+  },
+  {
+   "fieldname": "vehicel_type",
+   "fieldtype": "Link",
+   "label": "Vehicel Type",
+   "options": "Vehicle Type"
   }
  ],
  "has_web_view": 1,
@@ -123,7 +130,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-03-05 12:35:17.979180",
+ "modified": "2025-03-05 15:52:36.427311",
  "modified_by": "Administrator",
  "module": "cabs",
  "name": "Vehicle",
