@@ -27,15 +27,13 @@
    "fieldname": "addrress",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Addrress",
-   "reqd": 1
+   "label": "Addrress"
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Phone",
    "in_list_view": 1,
-   "label": "Contact Number",
-   "reqd": 1
+   "label": "Contact Number"
   },
   {
    "fieldname": "column_break_jbjq",
@@ -44,8 +42,7 @@
   {
    "fieldname": "date",
    "fieldtype": "Datetime",
-   "label": "Pickup time",
-   "reqd": 1
+   "label": "Pickup time"
   },
   {
    "default": "New",
@@ -70,7 +67,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-05 11:04:58.900502",
+ "modified": "2025-03-06 15:46:08.727387",
  "modified_by": "Administrator",
  "module": "cabs",
  "name": "Ride Order",

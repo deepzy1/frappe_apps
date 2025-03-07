@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"zEXDP0zdBZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Cabs</span>\",\"col\":12}},{\"id\":\"hbiuFmyJgk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Booking\",\"col\":3}},{\"id\":\"3r9dq3Rq8d\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Order\",\"col\":3}},{\"id\":\"OmTihCiXUa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"isUQhwgJCn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver\",\"col\":3}},{\"id\":\"POpkVKpQ5Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report Python\",\"col\":3}},{\"id\":\"Rof-zsThIz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>webpage</b></span>\",\"col\":12}},{\"id\":\"ALvv7gXbua\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BOOK a Ride\",\"col\":3}},{\"id\":\"EFOVIjaQV8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"hello\",\"col\":3}}]",
+ "content": "[{\"id\":\"zEXDP0zdBZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Cabs</span>\",\"col\":12}},{\"id\":\"hbiuFmyJgk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Booking\",\"col\":3}},{\"id\":\"3r9dq3Rq8d\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ride Order\",\"col\":3}},{\"id\":\"OmTihCiXUa\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"isUQhwgJCn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Driver\",\"col\":3}},{\"id\":\"POpkVKpQ5Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Report Python\",\"col\":3}},{\"id\":\"Rof-zsThIz\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>webpage</b></span>\",\"col\":12}},{\"id\":\"ALvv7gXbua\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BOOK a Ride\",\"col\":3}},{\"id\":\"EFOVIjaQV8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"hello\",\"col\":3}},{\"id\":\"zzHfY05TEp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visitor\",\"col\":3}}]",
  "creation": "2025-02-24 15:44:13.064869",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Cabs",
  "links": [],
- "modified": "2025-02-27 14:01:01.073982",
+ "modified": "2025-03-06 16:14:26.884136",
  "modified_by": "Administrator",
  "module": "cabs",
  "name": "Cabs",
@@ -67,6 +67,14 @@
    "doc_view": "List",
    "label": "Driver",
    "link_to": "Driver",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Visitor",
+   "link_to": "Visitor",
    "stats_filter": "[]",
    "type": "DocType"
   },

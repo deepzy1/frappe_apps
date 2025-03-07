@@ -126,11 +126,10 @@
   }
  ],
  "has_web_view": 1,
- "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-03-05 15:52:36.427311",
+ "modified": "2025-03-07 10:56:34.842010",
  "modified_by": "Administrator",
  "module": "cabs",
  "name": "Vehicle",
